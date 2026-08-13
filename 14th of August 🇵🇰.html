@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Little 14th August Surprise 🇵🇰</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Naskh+Arabic:wght@500;600;700&display=swap');
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{font-family:"Cormorant Garamond",serif;color:#fff;background:#03140d}
+.scene{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;padding:25px 18px;overflow:hidden;background:radial-gradient(circle at 50% 35%,#176342 0%,#073421 32%,#03140d 72%)}
+.scene.active{display:flex;animation:in .7s ease}
+@keyframes in{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:scale(1)}}
+.stars{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#d9fff0 1px,transparent 1.5px);background-size:83px 83px,137px 137px;background-position:20px 15px,55px 70px;opacity:.28}
+.moon{position:absolute;right:9%;top:8%;width:72px;height:72px;border-radius:50%;background:#fffde7;box-shadow:0 0 30px #fff7}.moon:after{content:"";position:absolute;left:18px;top:-6px;width:72px;height:72px;border-radius:50%;background:#073421}
+.content{position:relative;z-index:3;max-width:850px;width:100%}
+.eyebrow{font-size:12px;letter-spacing:5px;text-transform:uppercase;opacity:.7;margin-bottom:18px}
+h1{font-size:clamp(40px,9vw,78px);line-height:1;margin:0 0 18px}h2{font-size:clamp(30px,7vw,56px);margin:0 0 18px;line-height:1.05}
+p{font-size:clamp(19px,4vw,28px);line-height:1.45;margin:10px auto}.small{font-size:17px;opacity:.72;letter-spacing:1px}
+.urdu{font-family:"Noto Naskh Arabic",serif;direction:rtl;font-size:clamp(23px,5vw,36px);line-height:1.85}
+.poem{padding:18px 15px;border-top:1px solid #ffffff25;border-bottom:1px solid #ffffff25;margin:18px auto}
+.tap{display:inline-block;margin-top:22px;padding:12px 22px;border:1px solid #ffffff35;border-radius:999px;background:#ffffff0d;cursor:pointer;letter-spacing:1.5px;backdrop-filter:blur(8px)}
+.flag{width:min(330px,75vw);aspect-ratio:3/2;margin:0 auto 28px;border-radius:5px;position:relative;background:linear-gradient(90deg,#fff 0 25%,#075b39 25%);box-shadow:0 18px 55px #0008;animation:wave 2.6s ease-in-out infinite}
+.flag:before{content:"";position:absolute;right:26%;top:28%;width:76px;height:76px;border-radius:50%;background:#fff}
+.flag:after{content:"★";position:absolute;right:19%;top:23%;font-size:28px;color:#075b39}
+@keyframes wave{50%{transform:skewY(2deg) rotate(.5deg)}}
+.fire{position:absolute;inset:0;pointer-events:none}.burst{position:absolute;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 12px 3px #b9ffe2;animation:boom 1.8s ease-out infinite}
+@keyframes boom{0%{transform:scale(.3);opacity:1}75%{transform:scale(15);opacity:.35}100%{transform:scale(18);opacity:0}}
+.f1{left:20%;top:25%}.f2{right:18%;top:32%;animation-delay:.55s}.f3{left:47%;top:18%;animation-delay:1s}.f4{right:35%;top:60%;animation-delay:1.35s}
+.wish{max-height:61vh;overflow:auto;padding:4px 12px}.wish p{font-size:clamp(19px,4vw,25px);line-height:1.58}
+.end{font-size:clamp(32px,7vw,64px)}
+.music-card{padding:22px 18px;border:1px solid #ffffff28;border-radius:22px;background:#ffffff0a;backdrop-filter:blur(10px);max-width:560px;margin:auto}
+.music-note{font-size:52px;display:block;margin-bottom:8px;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+.balloon-area{height:270px;position:relative;max-width:620px;margin:auto}
+.balloon{position:absolute;width:76px;height:96px;border-radius:50% 50% 48% 48%;cursor:pointer;box-shadow:inset -12px -10px 18px #0002,0 8px 18px #0004;animation:float 2.8s ease-in-out infinite}
+.balloon:after{content:"";position:absolute;left:50%;bottom:-46px;width:1px;height:50px;background:#ffffff70}
+.balloon:before{content:"";position:absolute;left:50%;bottom:-4px;transform:translateX(-50%);border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #ffffffaa}
+.b1{left:7%;top:55px;background:#fff}.b2{left:27%;top:15px;background:#087844;animation-delay:.3s}.b3{right:27%;top:28px;background:#fff;animation-delay:.6s}.b4{right:7%;top:65px;background:#087844;animation-delay:.9s}
+@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}
+.balloon-hint{margin-top:8px;font-size:16px;opacity:.7}
+</style>
+</head>
+<body>
+
+<section class="scene active" id="s1"><div class="stars"></div><div class="moon"></div><div class="content">
+<div class="eyebrow">14 August • 2026</div><h1>A Little<br>14th August<br>Surprise 🇵🇰</h1><p class="small">Something simple, sincere & made with good wishes.</p><div class="tap" onclick="go(2)">Tap to begin ✨</div></div></section>
+
+<section class="scene" id="s2"><div class="stars"></div><div class="fire"><i class="burst f1"></i><i class="burst f2"></i><i class="burst f3"></i><i class="burst f4"></i></div><div class="content">
+<div class="eyebrow">Tap for a little magic</div><h2>Freedom deserves a celebration 🎆</h2><p>May our green and white always rise with pride.</p><div class="tap" onclick="go(3)">Tap to continue 🎇</div></div></section>
+
+<section class="scene" id="s3"><div class="stars"></div><div class="content">
+<div class="eyebrow">A little patriotic melody</div>
+<div class="music-card"><span class="music-note">🎶</span><h2>Zama Da Watan Khkule</h2><p>Pashto patriotic melody • 🇵🇰💚</p><p class="small">Tap play to listen right here.</p><div style="position:relative;width:100%;padding-top:56.25%;margin:16px auto 4px;border-radius:16px;overflow:hidden;border:1px solid #ffffff20;background:#0005"><iframe src="https://www.youtube.com/embed/OOU85dR5Idw?rel=0" title="Pashto patriotic song" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div>
+<div class="tap" onclick="go(4)">Next ✨</div></div></section>
+
+<section class="scene" id="s4"><div class="stars"></div><div class="content">
+<div class="eyebrow">A small prayer</div>
+<div class="poem urdu">اور آج کی اس خوبصورت دعا میں<br>آپ کے لیے بھی بس اتنا سا کہنا ہے،<br>اللہ آپ کو ہر اُس پریشانی سے آزاد کرے<br>جو آپ کی مسکراہٹ چھین لے،<br>اور آپ کی زندگی کو سکون، خوشیوں<br>اور خوبصورت لمحوں سے بھر دے۔ 🤍🕊️</div>
+<div class="tap" onclick="go(5)">Next ✨</div></div></section>
+
+<section class="scene" id="s5"><div class="stars"></div><div class="content">
+<div class="eyebrow">A sincere wish</div><div class="wish">
+<p>𝑴𝒂𝒚 𝒕𝒉𝒊𝒔 𝑰𝒏𝒅𝒆𝒑𝒆𝒏𝒅𝒆𝒏𝒄𝒆 𝑫𝒂𝒚 𝒃𝒓𝒊𝒏𝒈 𝒚𝒐𝒖 𝒑𝒆𝒂𝒄𝒆, 𝒉𝒂𝒑𝒑𝒊𝒏𝒆𝒔𝒔, 𝒂𝒏𝒅 𝒃𝒆𝒂𝒖𝒕𝒊𝒇𝒖𝒍 𝒃𝒆𝒈𝒊𝒏𝒏𝒊𝒏𝒈𝒔. 🇵🇰🤍✨</p>
+<p>𝑴𝒂𝒚 𝑨𝒍𝒍𝒂𝒉 𝒃𝒍𝒆𝒔𝒔 𝒚𝒐𝒖𝒓 𝒍𝒊𝒇𝒆 𝒘𝒊𝒕𝒉 𝒆𝒏𝒅𝒍𝒆𝒔𝒔 𝒆𝒂𝒔𝒆, 𝒔𝒖𝒄𝒄𝒆𝒔𝒔, 𝒂𝒏𝒅 𝒎𝒐𝒎𝒆𝒏𝒕𝒔 𝒘𝒐𝒓𝒕𝒉 𝒔𝒎𝒊𝒍𝒊𝒏𝒈 𝒇𝒐𝒓. 🤲🏻🌸</p>
+<p>𝑴𝒂𝒚 𝒆𝒗𝒆𝒓𝒚 𝒔𝒊𝒏𝒄𝒆𝒓𝒆 𝒑𝒓𝒂𝒚𝒆𝒓 𝒇𝒊𝒏𝒅 𝒊𝒕𝒔 𝒘𝒂𝒚 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒑𝒐𝒔𝒔𝒊𝒃𝒍𝒆 𝒂𝒏𝒔𝒘𝒆𝒓, 𝒂𝒏𝒅 𝒎𝒂𝒚 𝒆𝒗𝒆𝒓𝒚 𝒅𝒊𝒇𝒇𝒊𝒄𝒖𝒍𝒕 𝒅𝒂𝒚 𝒍𝒆𝒂𝒅 𝒚𝒐𝒖 𝒕𝒐𝒘𝒂𝒓𝒅𝒔 𝒔𝒐𝒎𝒆𝒕𝒉𝒊𝒏𝒈 𝒃𝒆𝒕𝒕𝒆𝒓. 🤍✨</p>
+<p>𝑺𝒐𝒎𝒆 𝒑𝒆𝒐𝒑𝒍𝒆 𝒂𝒓𝒆 𝒔𝒊𝒎𝒑𝒍𝒚 𝒂𝒑𝒑𝒓𝒆𝒄𝒊𝒂𝒕𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒆𝒊𝒓 𝒔𝒊𝒏𝒄𝒆𝒓𝒊𝒕𝒚 𝒂𝒏𝒅 𝒕𝒉𝒆 𝒈𝒐𝒐𝒅𝒏𝒆𝒔𝒔 𝒕𝒉𝒆𝒚 𝒄𝒂𝒓𝒓𝒚, 𝒂𝒏𝒅 𝑰 𝒈𝒆𝒏𝒖𝒊𝒏𝒆𝒍𝒚 𝒘𝒊𝒔𝒉 𝒏𝒐𝒕𝒉𝒊𝒏𝒈 𝒃𝒖𝒕 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒇𝒐𝒓 𝒚𝒐𝒖. 🕊️🤍</p>
+<p>𝑴𝒂𝒚 𝑨𝒍𝒍𝒂𝒉 𝒂𝒍𝒘𝒂𝒚𝒔 𝒑𝒓𝒐𝒕𝒆𝒄𝒕 𝒚𝒐𝒖, 𝒌𝒆𝒆𝒑 𝒚𝒐𝒖𝒓 𝒉𝒆𝒂𝒓𝒕 𝒂𝒕 𝒑𝒆𝒂𝒄𝒆, 𝒂𝒏𝒅 𝒎𝒂𝒌𝒆 𝒚𝒐𝒖𝒓 𝒋𝒐𝒖𝒓𝒏𝒆𝒚 𝒂𝒉𝒆𝒂𝒅 𝒃𝒆𝒂𝒖𝒕𝒊𝒇𝒖𝒍. 🕊️🤍</p>
+<p>𝑺𝒕𝒂𝒚 𝒃𝒍𝒆𝒔𝒔𝒆𝒅, 𝒌𝒆𝒆𝒑 𝒔𝒎𝒊𝒍𝒊𝒏𝒈, 𝒂𝒏𝒅 𝒌𝒆𝒆𝒑 𝒃𝒆𝒊𝒏𝒈 𝒚𝒐𝒖. 💚🇵🇰✨</p>
+</div><div class="tap" onclick="go(6)">One last little note 🌿</div></div></section>
+
+<section class="scene" id="s6"><div class="stars"></div><div class="content">
+<div class="eyebrow">Just a little sincerity</div>
+<div class="poem"><p>Some wishes are simply meant to be sincere. 🤍</p><p>May the days ahead be kind to you,<br>peaceful for your heart,<br>and beautiful in their own way. 🌿✨</p></div>
+<p class="small">A little prayer, just for you. 🤲🏻🤍</p><div class="tap" onclick="go(7)">Open the balloons 🎈</div></div></section>
+
+<section class="scene" id="s7"><div class="stars"></div><div class="content">
+<div class="eyebrow">A little green & white surprise</div>
+<h2>Tap the balloons 🎈</h2>
+<div class="balloon-area">
+<div class="balloon b1" onclick="pop(this)"></div>
+<div class="balloon b2" onclick="pop(this)"></div>
+<div class="balloon b3" onclick="pop(this)"></div>
+<div class="balloon b4" onclick="pop(this)"></div>
+</div>
+<div class="balloon-hint">Tap each one ✨</div>
+<div class="tap" id="balloonNext" style="display:none" onclick="go(8)">Final surprise 🇵🇰</div>
+</div></section>
+
+<section class="scene" id="s8"><div class="stars"></div><div class="moon"></div>
+<div class="fire"><i class="burst f1"></i><i class="burst f2"></i><i class="burst f3"></i><i class="burst f4"></i></div>
+<div class="content"><div class="eyebrow">With sincere wishes</div>
+<h1 class="end">HAPPY INDEPENDENCE DAY CR:) ✨🇵🇰</h1>
+<p>May Pakistan always remain peaceful, prosperous & proud.</p>
+<p class="small">Pakistan Zindabad • 14 August 💚🤍</p><p style="font-size:clamp(19px,4vw,27px);margin-top:22px;font-style:italic;opacity:.9;">A little wish, sincerely made for you. 🤍</p></div></section>
+
+<script>
+let popped=0;
+function go(n){document.querySelectorAll(".scene").forEach(s=>s.classList.remove("active"));document.getElementById("s"+n).classList.add("active");if(n===8)fireworks();}
+function pop(el){if(el.dataset.popped)return;el.dataset.popped="1";el.style.transition=".35s";el.style.transform="scale(0)";el.style.opacity="0";popped++;if(popped===4)document.getElementById("balloonNext").style.display="inline-block";}
+function fireworks(){for(let i=0;i<12;i++){const b=document.createElement("i");b.className="burst";b.style.left=(8+Math.random()*84)+"%";b.style.top=(12+Math.random()*70)+"%";b.style.animationDelay=(Math.random()*1.2)+"s";document.querySelector("#s8 .fire").appendChild(b);}}
+</script>
+</body>
+</html>
